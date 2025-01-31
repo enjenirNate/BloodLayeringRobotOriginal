@@ -161,6 +161,10 @@ void setup() {
 
  	WiFi.mode(WIFI_STA);
  
+
+  //extra code just to test change
+  Serial.println("NATHANIELK IS HERE HEHEEH");
+
   // Init ESP-NOW
  	if (esp_now_init() != ESP_OK) {
  			Serial.println(F("Error initializing ESP-NOW"));
