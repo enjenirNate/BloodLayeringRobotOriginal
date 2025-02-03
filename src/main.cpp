@@ -474,6 +474,9 @@ void performFillingMotionforAll4(){
     }else{
       lastRun = false;
     }
+
+    Serial.printf("Starting to fill tube number ");
+    Serial.printf("%d", i+1);
     performFillingMotionFor1Tube(i+1);
   }
   if (AbortSignal || estopSignal == 1) return;
@@ -699,6 +702,8 @@ void performFastFillingMotionForAll4(){
     }else{
       lastRun = false;
     }
+    Serial.printf("Starting to fill tube number ");
+    Serial.printf("%d", i+1);
     performFastFillingMotionFor1Tube(i+1);
     if (AbortSignal || estopSignal == 1) return;
   }
